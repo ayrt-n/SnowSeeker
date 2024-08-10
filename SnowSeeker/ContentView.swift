@@ -19,6 +19,8 @@ struct ContentView: View {
             resorts.filter { $0.name.localizedStandardContains(searchText) }
         }
     }
+    
+    @State private var favorites = Favorites()
      
     var body: some View {
         NavigationSplitView {
@@ -43,6 +45,13 @@ struct ContentView: View {
                             Text("\(resort.runs) runs")
                                 .foregroundStyle(.secondary)
                         }
+                        
+                        if favorites.contains(resort) {
+                            Spacer()
+                            Image(systemName: "heart.fill")
+                                .accessibilityLabel("This is a favorite resort")
+                                .foregroundStyle(.red)
+                        }
                     }
                 }
             }
@@ -54,6 +63,7 @@ struct ContentView: View {
         } detail: {
             WelcomeView()
         }
+        .environment(favorites)
     }
 }
 

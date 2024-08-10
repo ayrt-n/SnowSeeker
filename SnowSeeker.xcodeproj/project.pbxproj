@@ -18,6 +18,8 @@
 		E84FD2DD2C679636002E9FD4 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2DC2C679636002E9FD4 /* ResortView.swift */; };
 		E84FD2DF2C67975C002E9FD4 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2DE2C67975C002E9FD4 /* SkiDetailsView.swift */; };
 		E84FD2E12C67983A002E9FD4 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2E02C67983A002E9FD4 /* ResortDetailsView.swift */; };
+		E84FD2E32C67DEB8002E9FD4 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2E22C67DEB8002E9FD4 /* Facility.swift */; };
+		E84FD2E52C67E1ED002E9FD4 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2E42C67E1ED002E9FD4 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		E84FD2DC2C679636002E9FD4 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
 		E84FD2DE2C67975C002E9FD4 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		E84FD2E02C67983A002E9FD4 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		E84FD2E22C67DEB8002E9FD4 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		E84FD2E42C67E1ED002E9FD4 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				E84FD2DE2C67975C002E9FD4 /* SkiDetailsView.swift */,
 				E84FD2E02C67983A002E9FD4 /* ResortDetailsView.swift */,
 				E84FD2DC2C679636002E9FD4 /* ResortView.swift */,
+				E84FD2E42C67E1ED002E9FD4 /* Favorites.swift */,
+				E84FD2E22C67DEB8002E9FD4 /* Facility.swift */,
 				E84FD2DA2C6795F2002E9FD4 /* WelcomeView.swift */,
 				E84FD2D42C678F50002E9FD4 /* Resort.swift */,
 				E84FD2D62C678F90002E9FD4 /* Bundle-Decodable.swift */,
@@ -162,6 +168,8 @@
 				E84FD2DB2C6795F2002E9FD4 /* WelcomeView.swift in Sources */,
 				E84FD2DF2C67975C002E9FD4 /* SkiDetailsView.swift in Sources */,
 				E84FD2E12C67983A002E9FD4 /* ResortDetailsView.swift in Sources */,
+				E84FD2E52C67E1ED002E9FD4 /* Favorites.swift in Sources */,
+				E84FD2E32C67DEB8002E9FD4 /* Facility.swift in Sources */,
 				E84FD2C92C6785AA002E9FD4 /* ContentView.swift in Sources */,
 				E84FD2D52C678F50002E9FD4 /* Resort.swift in Sources */,
 				E84FD2DD2C679636002E9FD4 /* ResortView.swift in Sources */,
@@ -300,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SnowSeeker/Preview Content\"";
+				DEVELOPMENT_TEAM = B7HQ9T4KBZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -328,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SnowSeeker/Preview Content\"";
+				DEVELOPMENT_TEAM = B7HQ9T4KBZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
