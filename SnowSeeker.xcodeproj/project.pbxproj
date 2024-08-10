@@ -11,6 +11,11 @@
 		E84FD2C92C6785AA002E9FD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2C82C6785AA002E9FD4 /* ContentView.swift */; };
 		E84FD2CB2C6785AC002E9FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84FD2CA2C6785AC002E9FD4 /* Assets.xcassets */; };
 		E84FD2CE2C6785AC002E9FD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84FD2CD2C6785AC002E9FD4 /* Preview Assets.xcassets */; };
+		E84FD2D52C678F50002E9FD4 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2D42C678F50002E9FD4 /* Resort.swift */; };
+		E84FD2D72C678F90002E9FD4 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2D62C678F90002E9FD4 /* Bundle-Decodable.swift */; };
+		E84FD2D92C67903F002E9FD4 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = E84FD2D82C67903F002E9FD4 /* resorts.json */; };
+		E84FD2DB2C6795F2002E9FD4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2DA2C6795F2002E9FD4 /* WelcomeView.swift */; };
+		E84FD2DD2C679636002E9FD4 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FD2DC2C679636002E9FD4 /* ResortView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		E84FD2C82C6785AA002E9FD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E84FD2CA2C6785AC002E9FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E84FD2CD2C6785AC002E9FD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E84FD2D42C678F50002E9FD4 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		E84FD2D62C678F90002E9FD4 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		E84FD2D82C67903F002E9FD4 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		E84FD2DA2C6795F2002E9FD4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E84FD2DC2C679636002E9FD4 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,13 @@
 		E84FD2C52C6785AA002E9FD4 /* SnowSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				E84FD2D82C67903F002E9FD4 /* resorts.json */,
 				E84FD2C62C6785AA002E9FD4 /* SnowSeekerApp.swift */,
 				E84FD2C82C6785AA002E9FD4 /* ContentView.swift */,
+				E84FD2DC2C679636002E9FD4 /* ResortView.swift */,
+				E84FD2DA2C6795F2002E9FD4 /* WelcomeView.swift */,
+				E84FD2D42C678F50002E9FD4 /* Resort.swift */,
+				E84FD2D62C678F90002E9FD4 /* Bundle-Decodable.swift */,
 				E84FD2CA2C6785AC002E9FD4 /* Assets.xcassets */,
 				E84FD2CC2C6785AC002E9FD4 /* Preview Content */,
 			);
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84FD2D92C67903F002E9FD4 /* resorts.json in Resources */,
 				E84FD2CE2C6785AC002E9FD4 /* Preview Assets.xcassets in Resources */,
 				E84FD2CB2C6785AC002E9FD4 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84FD2DB2C6795F2002E9FD4 /* WelcomeView.swift in Sources */,
 				E84FD2C92C6785AA002E9FD4 /* ContentView.swift in Sources */,
+				E84FD2D52C678F50002E9FD4 /* Resort.swift in Sources */,
+				E84FD2DD2C679636002E9FD4 /* ResortView.swift in Sources */,
 				E84FD2C72C6785AA002E9FD4 /* SnowSeekerApp.swift in Sources */,
+				E84FD2D72C678F90002E9FD4 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
