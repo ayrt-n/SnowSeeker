@@ -11,6 +11,7 @@ struct ContentView: View {
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     
     @State private var searchText = ""
+    @State private var sortBy = "default"
     
     var filteredResorts: [Resort] {
         if searchText.isEmpty {
@@ -20,11 +21,22 @@ struct ContentView: View {
         }
     }
     
+    var resortList: [Resort] {
+        switch sortBy {
+        case "alphabetical":
+            return filteredResorts.sorted { $0.name < $1.name }
+        case "country":
+            return filteredResorts.sorted { $0.country < $1.country }
+        default:
+            return filteredResorts
+        }
+    }
+    
     @State private var favorites = Favorites()
      
     var body: some View {
         NavigationSplitView {
-            List(filteredResorts) { resort in
+            List(resortList) { resort in
                 NavigationLink(value: resort) {
                     HStack {
                         Image(resort.country)
@@ -60,6 +72,20 @@ struct ContentView: View {
                     ResortView(resort: resort)
             }
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                    Picker("Sort", selection: $sortBy) {
+                        Text("Sort by default")
+                            .tag("default")
+                        
+                        Text("Sort by name")
+                            .tag("alphabetical")
+                        
+                        Text("Sort by Country")
+                            .tag("country")
+                    }
+                }
+            }
         } detail: {
             WelcomeView()
         }
